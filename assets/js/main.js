@@ -46,7 +46,7 @@ function renderBooks() {
         })
 
         document.getElementById(`editBtn-${book.id}`).addEventListener("click", _ => {
-            window.open(`/edit.html?id=${book.id}`, "_self");
+            window.open(`/Bookshelv/edit.html?id=${book.id}`, "_self");
         })
 
         document.getElementById(`completeBtn-${book.id}`).addEventListener("click", _ => {
