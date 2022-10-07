@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Simple and offline Bookshelf app">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>BookShelv - Edit Book</title>
+</head>
+<body class="bg-[#242943] m-16 text-white">
+    <div class="w-full">
+        <div id="editContainer" class="hidden p-8 mt-4 my-4 h-fit w-full bg-slate-500/25 rounded shadow-lg">
+            <h1 class="text-2xl text-center">Edit Book</h1>
+            <div class="mt-2 mb-2 w-full bg-slate-500/50 h-[2px]"></div>
+      
+            <form class="grid grid-cols-3 gap-x-8 gap-y-4" id="editForm" action="">
+                <div>
+                    <label class="text-xl mt-4 mb-2 block" for="title">Title</label>
+                    <input
+                      class="w-full p-2 mb-4 bg-slate-500/50 rounded-sm shadow-sm outline-0 ring-0 focus:ring-2 focus:ring-slate-400"
+                      type="text"
+                      id="title"
+                      maxlength="56"
+                      required
+                    />
+                </div>
+      
+              <div>
+                <label class="text-xl mt-4 mb-2 block" for="author">Author</label>
+                <input
+                  class="w-full p-2 mb-4 bg-slate-500/50 rounded-sm shadow-sm outline-0 ring-0 focus:ring-2 focus:ring-slate-400"
+                  type="text"
+                  id="author"
+                  maxlength="32"
+                  required
+                />
+              </div>
+      
+              <div>
+                <label class="text-xl mt-4 mb-2 block" for="year">year</label>
+                <input
+                  class="w-full p-2 bg-slate-500/50 rounded-sm shadow-sm outline-0 ring-0 focus:ring-2 focus:ring-slate-400"
+                  type="text"
+                  id="year"
+                  maxlength="4"
+                  required
+                />
+              </div>
+      
+              <button class="w-full col-span-3 p-4 shadow-lg rounded bg-slate-500/50 transition-all hover:bg-slate-400/75" type="submit">Update Book</button>
+            </form>
+        </div>
+
+        <div id="notFoundContainer" class="hidden w-full p-8 my-4 bg-slate-500/25 rounded shadow-lg text-center">
+            <h2 class="font-mono text-xl">No book found with that id :(</h2>
+            <a class="block w-fit mt-16 mx-auto p-4 shadow rounded bg-slate-500/50 transition-all hover:bg-slate-400/75 hover:scale-105" href="/index.html">Go to homepage</a>
+        </div>
+    </div>
+    
+    <script type="module" src="/assets/js/book.js"></script>
+    <script type="module" src="/assets/js/storage.js"></script>
+    <script type="module" src="/assets/js/edit.js"></script>
+</body>
+</html>

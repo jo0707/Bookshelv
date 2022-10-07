@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="/assets/img/favicon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Simple and offline Bookshelf app">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>BookShelv - Home</title>
+</head>
+<body class="bg-[#242943] mx-16 mb-16 mt-4 text-white">
+    <div class="w-full">
+        <img class="mx-auto mt-8 scale-[0.6]" src="/assets/img/logo.png" alt="" width="1000" height="300">
+
+        <div class="w-full mt-8 grid gap-4 grid-cols-2 grid-rows-2">
+            <button id="uncompletedBtn" class="p-4 text-lg shadow-sm rounded bg-slate-300/50 hover:bg-slate-400/50 transition">Uncompleted Books (0)</button>
+            <button id="completedBtn" class="p-4 text-lg shadow-sm rounded bg-slate-600/50 hover:bg-slate-400/50 transition">Completed Books (0)</button>
+            <button id="addBookBtn" class="col-span-2 p-4 text-lg shadow-sm rounded bg-slate-600/50 hover:bg-slate-400/50 transition">+ Add Book</button>
+            <!-- <a href="/add.html" class="col-span-2 p-4 text-center text-lg shadow-sm rounded bg-slate-600/50 hover:bg-slate-400/50 transition">+ Add Book</a> -->
+        </div>
+
+        <div id="addFormContainer" class="add-container hide p-8 mt-4 my-4 h-fit w-full bg-slate-500/25 rounded shadow-lg">
+            <h1 class="text-2xl">Add Book</h1>
+            <div class="mt-2 mb-2 w-full bg-slate-500/50 h-[2px]"></div>
+      
+            <form class="grid grid-cols-3 gap-x-8 gap-y-4" id="addForm" action="">
+                <div>
+                    <label class="text-xl mt-4 mb-2 block" for="title">Title</label>
+                    <input
+                      class="w-full p-2 mb-4 bg-slate-500/50 rounded-sm shadow-sm outline-0 ring-0 focus:ring-2 focus:ring-slate-400"
+                      type="text"
+                      id="title"
+                      maxlength="56"
+                      required
+                    />
+                </div>
+      
+              <div>
+                <label class="text-xl mt-4 mb-2 block" for="author">Author</label>
+                <input
+                  class="w-full p-2 mb-4 bg-slate-500/50 rounded-sm shadow-sm outline-0 ring-0 focus:ring-2 focus:ring-slate-400"
+                  type="text"
+                  id="author"
+                  maxlength="32"
+                  required
+                />
+              </div>
+      
+              <div>
+                <label class="text-xl mt-4 mb-2 block" for="year">Year</label>
+                <input
+                  class="w-full p-2 bg-slate-500/50 rounded-sm shadow-sm outline-0 ring-0 focus:ring-2 focus:ring-slate-400"
+                  type="text"
+                  id="year"
+                  maxlength="4"
+                  required
+                />
+              </div>
+      
+              <button class="w-full col-span-3 p-4 shadow-lg rounded bg-slate-500/50 transition-all hover:bg-slate-400/75" type="submit">Add Book</button>
+            </form>
+          </div>
+
+        <div class="p-6 shadow-sm rounded text-lg bg-slate-600/50">
+          <div class="flex flex-row">
+            <h1 class="text-xl my-auto">Book Lists</h1>
+            <div class="bg-slate-500/50 w-[2px] mx-6"></div>
+            <input class="grow min-w-0 py-2 px-4 bg-slate-500/50 rounded-sm shadow-sm outline-0 ring-0 focus:ring-2 focus:ring-slate-400" id="searchbar" type="text" placeholder="find books...">
+          </div>
+
+            <div class="my-4 w-full bg-slate-500/50 h-[2px]"></div>
+            <div id="booksContainer">
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center p-4">
+      <p id="footerText" class="text-slate-500">2022 © Joshua Sinaga</p>
+    </footer>
+    
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/notyf@3.10.0/notyf.min.js"></script>
+    <script type="module" src="/assets/js/book.js"></script>
+    <script type="module" src="/assets/js/storage.js"></script>
+    <script type="module" src="/assets/js/main.js"></script>
+</body>
+</html>
