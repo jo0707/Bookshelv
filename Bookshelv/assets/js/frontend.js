@@ -18,13 +18,13 @@ export function createBookElement(book, uncompleted) {
     
     <div class="my-auto py-auto">
         <button class="h-8 w-8 inline hover:scale-[1.2] transition-all" title="Delete Book" id="deleteBtn-${book.id}">
-            <img src="/assets/img/delete.png"/>      
+            <img src="/Bookshelv/assets/img/delete.png"/>      
         </button>
         <button class="h-8 w-8 inline hover:scale-[1.2] transition-all" title="Edit Book" id="editBtn-${book.id}">
-            <img src="/assets/img/edit.png"/>                                                            
+            <img src="/Bookshelv/assets/img/edit.png"/>                                                            
         </button>
         <button class="h-8 w-8 inline hover:scale-[1.2] transition-all" title="Mark as ${uncompleted ? "completed" : "uncompleted"}" id="completeBtn-${book.id}">
-            <img src="/assets/img/${uncompleted ? "complete" : "rollback"}.png"/>
+            <img src="/Bookshelv/assets/img/${uncompleted ? "complete" : "rollback"}.png"/>
         </button>
     </div>
     </div>`
