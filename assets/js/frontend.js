@@ -21,7 +21,7 @@ export function createBookElement(book, uncompleted) {
             <img src="/Bookshelv/assets/img/delete.png"/>      
         </button>
         <button class="h-8 w-8 inline hover:scale-[1.2] transition-all" title="Edit Book" id="editBtn-${book.id}">
-            <img src="/Bookshelv/assets/img/Bookshelv/edit.png"/>                                                            
+            <img src="/Bookshelv/assets/img/edit.png"/>                                                            
         </button>
         <button class="h-8 w-8 inline hover:scale-[1.2] transition-all" title="Mark as ${uncompleted ? "completed" : "uncompleted"}" id="completeBtn-${book.id}">
             <img src="/Bookshelv/assets/img/${uncompleted ? "complete" : "rollback"}.png"/>
