@@ -11,7 +11,7 @@ const authorInput = document.getElementById("author");
 const yearInput = document.getElementById("year");
 const editForm = document.getElementById("editForm");
 
-const id = (new URL(document.location)).searchParams.get("id"); 
+const id = (new URL(document.location)).searchParams.get("id");
 let book;
 
 if (!storage.isStorageExists()) {
@@ -43,7 +43,7 @@ function updateBook() {
         )
     );
 
-    window.open("/index.html", "_self");
+    window.open("/Bookshelv/index.html", "_self");
 }
 
 /* EVENT LISTENER */
