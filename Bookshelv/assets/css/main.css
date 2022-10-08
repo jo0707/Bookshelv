@@ -29,5 +29,6 @@ html {
   .add-container.show {
     height: 400px;
     transition: all 0.3s ease-in-out;
+    overflow: scroll;
   }
 }
