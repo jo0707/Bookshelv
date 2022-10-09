@@ -9,17 +9,17 @@
     <link rel="stylesheet" href="/Bookshelv/assets/css/style.css">
     <title>BookShelv - add Book</title>
 </head>
-<body class="bg-[#242943] m-16 text-white">
+<body class="bg-[#242943] m-8 sm:m-16 text-white">
     <div class="w-full">
-        <div id="editContainer" class="hidden p-8 mt-4 my-4 h-fit w-full bg-slate-500/25 rounded shadow-lg">
+        <div id="editContainer" class="hidden p-6 sm:p-8 mt-4 my-4 h-fit w-full bg-slate-500/25 rounded shadow-lg">
             <h1 class="text-2xl text-center">Edit Book</h1>
             <div class="mt-2 mb-2 w-full bg-slate-500/50 h-[2px]"></div>
       
-            <form class="grid grid-cols-3 gap-x-8 gap-y-4" id="editForm" action="">
+            <form class="grid grid-cols-1 sm:grid-cols-3 gap-x-8 sm:gap-x-4 gap-y-4" id="editForm" action="">
                 <div>
-                    <label class="text-xl mt-4 mb-2 block" for="title">Title</label>
+                    <label class="text-base sm:text-xl mt-2 sm:mt-4 mb-1 sm:mb-2 block" for="title">Title</label>
                     <input
-                      class="w-full p-2 mb-4 bg-slate-500/50 rounded-sm shadow-sm outline-0 ring-0 focus:ring-2 focus:ring-slate-400"
+                      class="w-full p-2 sm:mb-4 bg-slate-500/50 rounded-sm shadow-sm outline-0 ring-0 focus:ring-2 focus:ring-slate-400"
                       type="text"
                       id="title"
                       maxlength="56"
@@ -28,9 +28,9 @@
                 </div>
       
               <div>
-                <label class="text-xl mt-4 mb-2 block" for="author">Author</label>
+                <label class="text-base sm:text-xl mt-2 sm:mt-4 mb-1 sm:mb-2 block" for="author">Author</label>
                 <input
-                  class="w-full p-2 mb-4 bg-slate-500/50 rounded-sm shadow-sm outline-0 ring-0 focus:ring-2 focus:ring-slate-400"
+                  class="w-full p-2 sm:mb-4 bg-slate-500/50 rounded-sm shadow-sm outline-0 ring-0 focus:ring-2 focus:ring-slate-400"
                   type="text"
                   id="author"
                   maxlength="32"
@@ -39,9 +39,9 @@
               </div>
       
               <div>
-                <label class="text-xl mt-4 mb-2 block" for="year">year</label>
+                <label class="text-base sm:text-xl mt-2 sm:mt-4 mb-1 sm:mb-2 block" for="year">year</label>
                 <input
-                  class="w-full p-2 bg-slate-500/50 rounded-sm shadow-sm outline-0 ring-0 focus:ring-2 focus:ring-slate-400"
+                  class="w-full p-2 sm:mb-4 bg-slate-500/50 rounded-sm shadow-sm outline-0 ring-0 focus:ring-2 focus:ring-slate-400"
                   type="text"
                   id="year"
                   maxlength="4"
@@ -49,7 +49,7 @@
                 />
               </div>
       
-              <button class="w-full col-span-3 p-4 shadow-lg rounded bg-slate-500/50 transition-all hover:bg-slate-400/75" type="submit">Update Book</button>
+              <button class="w-full col-span-1 sm:col-span-3 p-4 shadow-lg rounded bg-slate-500/50 transition-all hover:bg-slate-400/75" type="submit">Update Book</button>
             </form>
         </div>
 
